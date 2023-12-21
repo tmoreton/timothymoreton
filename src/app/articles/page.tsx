@@ -4,17 +4,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { formatDate } from '@/lib/formatDate'
 import { getDocuments } from 'outstatic/server'
 
-interface Article {
-  title: string
-  description: string
-  author: string
-  publishedAt: string
-  content: any
-  status: string
-  slug: string
-}
-
-function Article({ article }: { article: Article }) {
+function Article({ article }: { article: any }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
