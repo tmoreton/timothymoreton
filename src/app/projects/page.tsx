@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoTrckfi from '@/images/logos/trckfi.png'
+import logoUsefully from '@/images/logos/usefully.jpg'
 
 const projects = [
   {
@@ -12,6 +13,13 @@ const projects = [
       'Easily track your money and reduce stress with our financial vision boards to empower confident decisions.',
     link: { href: 'http://trckfi.com', label: 'trckfi.com' },
     logo: logoTrckfi,
+  },
+  {
+    name: 'Useful.ly',
+    description:
+      'Open source css flex framework',
+    link: { href: 'http://css.useful.ly', label: 'css.useful.ly' },
+    logo: logoUsefully,
   },
 ]
 
@@ -35,7 +43,7 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of."
     >
       <ul
         role="list"
