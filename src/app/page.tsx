@@ -13,6 +13,9 @@ import {
 } from '@/components/SocialIcons'
 import logoInspire from '@/images/logos/inspire.jpg'
 import logoTrckfi from '@/images/logos/trckfi.png'
+import logoCgs from '@/images/logos/cgs.jpg'
+import logoAloha from '@/images/logos/aloha.png'
+import logoUsefully from '@/images/logos/usefully.jpg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -200,7 +203,28 @@ function Resume() {
       logo: logoInspire,
       start: '2018',
       end: '2023',
-    }
+    },
+    {
+      company: 'Useful.ly',
+      title: 'Founder/Developer',
+      logo: logoUsefully,
+      start: '2016',
+      end: '2019',
+    },
+    {
+      company: 'Aloha',
+      title: 'Lead Front End Software Engineer',
+      logo: logoAloha,
+      start: '2015',
+      end: '2017',
+    },
+    {
+      company: 'Contemporary Graphic Solutions',
+      title: 'Web Development Manager',
+      logo: logoCgs,
+      start: '2013',
+      end: '2015',
+    },
   ]
 
   return (
