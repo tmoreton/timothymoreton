@@ -1,11 +1,20 @@
 import { type Metadata } from 'next'
-
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import { getDocuments } from 'outstatic/server'
 
-function Article({ article }: { article: ArticleWithSlug }) {
+interface Article {
+  title: string
+  description: string
+  author: string
+  publishedAt: string
+  content: any
+  status: string
+  slug: string
+}
+
+function Article({ article }: { article: Article }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
@@ -14,21 +23,21 @@ function Article({ article }: { article: ArticleWithSlug }) {
         </Card.Title>
         <Card.Eyebrow
           as="time"
-          dateTime={article.date}
+          dateTime={article.publishedAt}
           className="md:hidden"
           decorate
         >
-          {formatDate(article.date)}
+          {formatDate(article.publishedAt)}
         </Card.Eyebrow>
         <Card.Description>{article.description}</Card.Description>
         <Card.Cta>Read article</Card.Cta>
       </Card>
       <Card.Eyebrow
         as="time"
-        dateTime={article.date}
+        dateTime={article.publishedAt}
         className="mt-1 hidden md:block"
       >
-        {formatDate(article.date)}
+        {formatDate(article.publishedAt)}
       </Card.Eyebrow>
     </article>
   )
@@ -41,8 +50,7 @@ export const metadata: Metadata = {
 }
 
 export default async function ArticlesIndex() {
-  let articles = await getAllArticles()
-
+  const articles = await getAllArticles()
   return (
     <SimpleLayout
       title="Writing on software design, company building, and the aerospace industry."
@@ -57,4 +65,8 @@ export default async function ArticlesIndex() {
       </div>
     </SimpleLayout>
   )
+}
+
+async function getAllArticles() {
+  return getDocuments('posts', ['title', 'slug', 'publishedAt', 'description'])
 }
