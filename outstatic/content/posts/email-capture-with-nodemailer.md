@@ -5,20 +5,19 @@ author:
   name: 'Tim Moreton Jr'
   picture: 'https://avatars.githubusercontent.com/u/5090418?v=4'
 slug: 'email-capture-with-nodemailer'
-description: 'Capturing Emails from a Newsletter Form in Next.js using Nodemailer'
+description: 'The first thing we do when we get a landing page up and running to test out an idea is that there''s one main feature that''s a requirement, and that''s a way to capture emails from potential customers. A longer-term solution is using a service like Mailchimp, Klaviyo & etc but to get something up and running quickly we can just use Nodemailer to send ourselves the emails of potential customers.'
 coverImage: ''
 publishedAt: '2023-10-11T13:52:24.888Z'
 ---
 
-The first thing we do when we get a landing page up and running to test out an idea there's one main feature that's a requirement, and that's a way to capture emails from potential customers. A longer term soltuion is using a service like Mialchimp, Klaviyo & etc but to get something up and running quick we can just use Nodemailer to send ourselves the emails of potential customers. Below we will create our own mini email service that will leverage Next.js API endpoints for Node functionality without having to decide between the hundreds of newsletter services just yet.
+The first thing we do when we get a landing page up and running to test out an idea is that there's one main feature that's a requirement, and that's a way to capture emails from potential customers. A longer-term solution is using a service like Mailchimp, Klaviyo & etc but to get something up and running quickly we can just use Nodemailer to send ourselves the emails of potential customers. Below we will create our own mini email service that will leverage Next.js API endpoints for Node functionality without having to decide between the hundreds of newsletter services just yet.
 
-Prerequisites:
-Before diving into the implementation, ensure you have the following prerequisites:
+Prerequisites: Before diving into the implementation, ensure you have the following prerequisites:
 
 1. Basic understanding of JavaScript and Node.js
 2. Familiarity with Next.js framework
 3. Node.js and npm (Node Package Manager) installed on your machine
-4. A Next.js project set up and ready for development
+4. A Next.js project is set up and ready for development
 
 ## Step 1: Setting up the Next.js Project
 
@@ -121,9 +120,9 @@ export default async (req, res) => {
 }
 ```
 
-Make sure to replace the email provider settings, such as `user` and `pass`, with your actual email and password. Additionally, update the `to
+Make sure to replace the email provider settings, such as `user` and `pass`, with your actual email and password. Additionally, update the \`to
 
-`field in the`mailOptions` object to specify the destination email address where you want to receive the captured email subscriptions.
+`field in the`mailOptions\` object to specify the destination email address where you want to receive the captured email subscriptions.
 
 ## Step 5: Integrating the NewsletterForm Component
 
