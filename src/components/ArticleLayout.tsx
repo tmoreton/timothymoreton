@@ -30,7 +30,7 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export function ArticleLayout({ article }: { article : Article }) {
+export function ArticleLayout({ article }: { article : any }) {
   let router = useRouter()
   let { previousPathname } = useContext(AppContext)
 
