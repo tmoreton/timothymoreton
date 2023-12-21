@@ -6,6 +6,7 @@ import { AppContext } from '@/app/providers'
 import { Container } from '@/components/Container'
 import { Prose } from '@/components/Prose'
 import { formatDate } from '@/lib/formatDate'
+import markdownStyles from './markdown-styles.module.css'
 
 interface Article {
   title: string
@@ -61,9 +62,10 @@ export function ArticleLayout({ data, content }: { data : any,  content: any }) 
                 <span className="ml-3">{formatDate(data?.publishedAt)}</span>
               </time>
             </header>
-            <Prose className="mt-8" data-mdx-content>
-              {content}
+            <Prose className="mt-8" data-md-content>
+              <div dangerouslySetInnerHTML={{ __html: content }}/>
             </Prose>
+            
           </article>
         </div>
       </div>
