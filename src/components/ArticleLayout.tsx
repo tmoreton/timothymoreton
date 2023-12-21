@@ -30,7 +30,7 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export function ArticleLayout({ article }: { article : any }) {
+export function ArticleLayout({ data, content }: { data : any,  content: any }) {
   let router = useRouter()
   let { previousPathname } = useContext(AppContext)
 
@@ -51,18 +51,18 @@ export function ArticleLayout({ article }: { article : any }) {
           <article>
             <header className="flex flex-col">
               <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                {article?.title}
+                {data?.title}
               </h1>
               <time
-                dateTime={article?.publishedAt}
+                dateTime={data?.publishedAt}
                 className="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
               >
                 <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
-                <span className="ml-3">{formatDate(article?.publishedAt)}</span>
+                <span className="ml-3">{formatDate(data?.publishedAt)}</span>
               </time>
             </header>
             <Prose className="mt-8" data-mdx-content>
-              {article?.content}
+              {content}
             </Prose>
           </article>
         </div>

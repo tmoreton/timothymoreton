@@ -6,8 +6,7 @@ import matter from 'gray-matter'
 
 export default async function Index({ params }: { params: any }) {
   const { data, content } = await getPost(params)
-  return <div>{data?.title}</div>
-  // return <ArticleLayout article={post} />
+  return <ArticleLayout data={data} content={content} />
 }
 
 async function getPost(params: any) {
