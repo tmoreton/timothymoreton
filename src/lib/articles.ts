@@ -14,22 +14,22 @@ export interface ArticleWithSlug extends Article {
 async function importArticle(
   articleFilename: string,
 ): Promise<ArticleWithSlug> {
-  let { article } = (await import(`../app/articles/${articleFilename}`)) as {
+  let { article } = (await import(`../../outstatic/content/posts/${articleFilename}`)) as {
     default: React.ComponentType
     article: Article
   }
 
   return {
-    slug: articleFilename.replace(/(\/page)?\.mdx$/, ''),
+    slug: articleFilename.replace(/\.md$/, ''),
     ...article,
   }
 }
 
 export async function getAllArticles() {
-  let articleFilenames = await glob('*/page.mdx', {
-    cwd: './src/app/articles',
+  let articleFilenames = await glob('*/*.md', {
+    cwd: './outstatic/content/posts',
   })
-
+  console.log(articleFilenames)
   let articles = await Promise.all(articleFilenames.map(importArticle))
 
   return articles.sort((a, z) => +new Date(z.date) - +new Date(a.date))
