@@ -17,7 +17,7 @@ const projects = [
   {
     name: 'Useful.ly',
     description:
-      'Open source css flex framework',
+      'Open source css flexbox framework',
     link: { href: 'http://css.useful.ly', label: 'css.useful.ly' },
     logo: logoUsefully,
   },
