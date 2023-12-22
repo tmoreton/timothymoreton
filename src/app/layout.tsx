@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       'Timothy Moreton - Software engineer, founder, and avid traveler',
   },
   description:
-    'I’m Tim, a software engineer and entrepreneur based in Miami, FL. I’m the founder of Trckfi, where we help people achieve financial clarity through our all-in-one money dashboard',
+    'I’m Tim, a software engineer and entrepreneur based in Miami. I’m the founder of Trckfi, where we help people achieve financial clarity through our all-in-one money dashboard',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

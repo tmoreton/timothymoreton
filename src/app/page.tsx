@@ -284,7 +284,7 @@ export default async function Home() {
             Software engineer, founder, and avid traveler.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Tim, a software engineer and entrepreneur based in Miami, FL. I’m the founder of Trckfi, where we help people achieve financial clarity through our all-in-one money dashboard
+            I’m Tim, a software engineer and entrepreneur based in Miami. I’m the founder of Trckfi, where we help people achieve financial clarity through our all-in-one money dashboard
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
