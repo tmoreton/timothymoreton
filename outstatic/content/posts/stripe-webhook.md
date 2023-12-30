@@ -10,7 +10,7 @@ coverImage: ''
 publishedAt: '2023-12-29'
 ---
 
-```jsx
+```js
 import Stripe from 'stripe'
 import getRawBody from 'raw-body'
 
