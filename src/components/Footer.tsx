@@ -32,7 +32,7 @@ export function Footer() {
                 <NavLink href="/articles">Blog</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
               </div>
-              <form action="https://rewrite.blog/api/subscribe" method="post">
+              <form action="https://rewrite.blog/api/subscribe" method="get">
                 <input name="email" type="email" required />
                 <input hidden name="token" type="text" value="clqwi1gvi0001ax9ld32fyusg" />
                 <input hidden name="blog" type="text" value="timothymoreton" />
