@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoTrckfi from '@/images/logos/trckfi.png'
-import logoRewrite from '@/images/logos/rewrite.png'
+import logoRewrite from '@/images/logos/rewrite-sm.png'
 import logoUsefully from '@/images/logos/usefully.jpg'
 
 const projects = [
