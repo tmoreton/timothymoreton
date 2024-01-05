@@ -4,20 +4,25 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoTrckfi from '@/images/logos/trckfi.png'
+import logoRewrite from '@/images/logos/rewrite.png'
 import logoUsefully from '@/images/logos/usefully.jpg'
 
 const projects = [
   {
     name: 'Trckfi',
-    description:
-      'Easily track your money and reduce stress with our financial vision boards to empower confident decisions.',
+    description: 'Easily track your money and reduce stress with our financial vision boards to empower confident decisions.',
     link: { href: 'http://trckfi.com', label: 'trckfi.com' },
     logo: logoTrckfi,
   },
   {
+    name: 'Rewrite.blog',
+    description: 'Easily track your money and reduce stress with our financial vision boards to empower confident decisions.',
+    link: { href: 'http://rewrite.blog', label: 'rewrite.blog' },
+    logo: logoRewrite,
+  },
+  {
     name: 'Useful.ly',
-    description:
-      'Open source css flexbox framework',
+    description:'An open source newsletter & blog platform rendered with markdown',
     link: { href: 'http://css.useful.ly', label: 'css.useful.ly' },
     logo: logoUsefully,
   },
