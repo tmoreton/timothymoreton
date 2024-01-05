@@ -16,13 +16,13 @@ const projects = [
   },
   {
     name: 'Rewrite.blog',
-    description: 'Easily track your money and reduce stress with our financial vision boards to empower confident decisions.',
+    description: 'An open source newsletter & blog platform rendered with markdown',
     link: { href: 'http://rewrite.blog', label: 'rewrite.blog' },
     logo: logoRewrite,
   },
   {
     name: 'Useful.ly',
-    description:'An open source newsletter & blog platform rendered with markdown',
+    description:'An open source flexbox based CSS framework',
     link: { href: 'http://css.useful.ly', label: 'css.useful.ly' },
     logo: logoUsefully,
   },
