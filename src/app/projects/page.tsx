@@ -6,6 +6,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import logoTrckfi from '@/images/logos/trckfi.png'
 import logoRewrite from '@/images/logos/rewrite-sm.png'
 import logoUsefully from '@/images/logos/usefully.jpg'
+import logoReread from '@/images/logos/reread.png'
 
 const projects = [
   {
@@ -19,6 +20,12 @@ const projects = [
     description: 'An open source newsletter & blog platform rendered with markdown',
     link: { href: 'http://rewrite.blog', label: 'rewrite.blog' },
     logo: logoRewrite,
+  },
+  {
+    name: 'Reread.news',
+    description: 'Save your links to ReRead later',
+    link: { href: 'http://reread.news', label: 'reread.news' },
+    logo: logoReread,
   },
   {
     name: 'Useful.ly',
