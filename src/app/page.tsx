@@ -116,7 +116,7 @@ function Newsletter() {
     <form
       action="https://rewrite.blog/notion/subscribe"
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-      method="get"
+      method="post"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
