@@ -74,7 +74,7 @@ export default function About() {
           <h1 className="mt-5 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
             I'm Timothy Moreton. I live in Miami, where I like to learn and build cool projects.
           </h1>
-          <h4 className="mt-10 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+          <h4 className="mt-10 mb-5 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
             Blog 📚
           </h4>
           <div className="space-y-7 text-lg font-bold text-zinc-600 dark:text-zinc-400">
