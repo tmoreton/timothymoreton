@@ -71,20 +71,23 @@ export default function About() {
           <h2 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Hola 👋 
           </h2>
-          <h1 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+          <h1 className="mt-5 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
             I'm Timothy Moreton. I live in Miami, where I like to learn and build cool projects.
           </h1>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <h4 className="mt-10 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+            Blog 📚
+          </h4>
+          <div className="space-y-7 text-lg font-bold text-zinc-600 dark:text-zinc-400">
             <a href='https://rewrite.blog/notion/post?page_id=f83a8c60-cb6c-415f-bf53-cd3b773827b7'>
               7 Startups, 7 Weeks
             </a>
           </div>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="space-y-7 text-lg font-bold text-zinc-600 dark:text-zinc-400">
             <a href='https://rewrite.blog/notion/post?page_id=83555ab7-bcf9-4317-ae37-0d0d8a9fab60'>
               Always Be Learning
             </a>
           </div>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="space-y-7 text-lg font-bold text-zinc-600 dark:text-zinc-400">
             <a href='https://rewrite.blog/notion/post?page_id=83555ab7-bcf9-4317-ae37-0d0d8a9fab60'>
               Startup # 2 - Reread.news
             </a>
