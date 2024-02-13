@@ -136,7 +136,7 @@ function Newsletter() {
         />
         <input hidden name="success_url" type="text" value="https://www.timothymoreton.com/" required />
         <input hidden name="id" type="text" value="clseunr030000ev9i9iosrgh8" />
-        <input hidden name="blog" type="text" value="TIMOTHYMORETON" />
+        <input hidden name="rewrite" type="text" value="blog" required />
         <Button type="submit" className="ml-4 flex-none">
           Join
         </Button>
