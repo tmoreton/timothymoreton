@@ -24,7 +24,7 @@ const projects = [
   {
     name: 'Reread.news',
     description: 'Save your links to ReRead later',
-    link: { href: 'http://reread.news', label: 'reread.news' },
+    link: { href: 'https://reread-news.vercel.app', label: 'reread.news' },
     logo: logoReread,
   },
   {
