@@ -10,6 +10,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
+  YoutubeIcon
 } from '@/components/SocialIcons'
 import logoInspire from '@/images/logos/inspire.jpg'
 import logoTrckfi from '@/images/logos/trckfi.png'
@@ -297,11 +298,11 @@ export default async function Home() {
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
-            <SocialLink
+            {/* <SocialLink
               href="https://instagram.com/travelingdeveloper"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            />
+            /> */}
             <SocialLink
               href="https://github.com/tmoreton"
               aria-label="Follow on GitHub"
@@ -311,6 +312,11 @@ export default async function Home() {
               href="https://linkedin.com/in/timothymoreton"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+            />
+            <SocialLink
+              href="https://www.youtube.com/channel/UCCPpMURuwcOfxQUMa-tAsyw"
+              aria-label="Follow on Youtube"
+              icon={YoutubeIcon}
             />
           </div>
         </div>
